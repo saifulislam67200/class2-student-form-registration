@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="icon" href="./image/images.png">
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <hr>
+    <p>Please enter the relevent information <br>  <small><b>Mandatory Field*</b></small></p>
+    <form>
+        <label for="district"><b>District</b>(Institute District: Where you want to do your course)*</label><br>
+        <select id="district" required>
+            <option value="#" disabled selected>--Select One--</option>
+            <option value="#">Dhaka</option>
+            <option value="#">Bogra</option>
+            <option value="#">Gazipur</option>
+        </select><br><br>
+        <label for="course"><b>Course*</b></label><br>
+        <select name="" id="course" required>
+            <option value="selectone" disabled selected>--Select One--</option>
+            <option value="webdesign">Web design and development--2025</option>
+            <option value="graphic">Graphic Design</option>
+            <option value="digital">Digital Marketing</option>
+        </select><br><br>
+        <label for="stdname">Student Name:</label><br>
+        <input type="text" name="stdname" id="stdname"><br><br>
+        <label for="fthname">Father's Name:</label><br>
+        <input type="text" name="fthname" id="fthname"><br><br>
+        <label for="mthname">Mather's Name:</label><br>
+        <input type="text" name="mthname" id="mthname">
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <select name="month">
+            <option value="month" disabled selected>Month</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="mearch">Merch</option>
+            <option value="aprial">Aprial</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="octtober">Octtober</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <select name="date">
+            <option value="date" disabled selected>Date</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select name="year">
+            <option value="year" disabled selected>Year</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select><br><br>
+
+        <label>Gender*:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <label>Physically Handicapped*:</label>
+        <input type="radio" name="gender"> Yes
+        <input type="radio" name="gender"> No
+        <br><br>
+
+        <label for="email">Email*:</label><br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <br><br>
+
+        <label for="phone">Phone Number* (Must be 11 Digits):</label><br>
+        <input type="text" name="phone" id="phone" placeholder="e.g:01774186050" minlength="11">
+        <br><br>
+
+        <label>Identification Type*:</label><br>
+        <select name="identification" required>
+            <option value="selectone" disabled selected>--Select One--</option>
+            <option value="birthcirtificate">Birth Cirtificate No</option>
+            <option value="nationalid">National ID</option>
+        </select>
+        <br><br>
+
+        <label>Home District*:</label>
+        <select name="homedistrict" required>
+            <option value="selectone" disabled selected>--Select One--</option>
+            <option value="dhaka">Dhaka</option>
+            <option value="khulna">Khulna</option>
+            <option value="barishal">Barishal</option>
+            <option value="jashore">Jashore</option>
+            <option value="magura">Magura</option>
+            <option value="sathkira">Sathkira</option>
+            <option value="norail">Norail</option>
+            <option value="madaripur">Madaripur</option>
+            <option value="shariatpur">Shariatpur</option>
+            <option value="borguna">Borguna</option>
+        </select>
+        <br><br>
+
+        <label>Upazila*:</label>
+        <select name="Upazila" required>
+            <option value="selectone" disabled selected>--Select One--</option>
+            <option value="monirampur">Monirampur</option>
+            <option value="khesobpur">Khesobpur</option>
+            <option value="nowapara">Nowapara</option>
+            <option value="mirpur">Mirpur</option>
+            <option value="uttara">Uttara</option>
+        </select>
+        <br><br>
+
+        <label for="vhr">Village/House No./Road No./Other Alternative*:</label><br>
+        <input type="text" name="vhr" id="vhr">
+        <br><br>
+
+        <label for="poffice">Post Office*:</label><br>
+        <input type="text" name="poffice" id="poffice">
+        <br><br>
+
+        <label>Educational Qualification* (Higher Level):</label><br>
+        <select name="qualification" required>
+            <option value="select" disabled selected>--Select One--</option>
+            <option value="highschool">Higher Secondary</option>
+            <option value="bachelor">Bachelor</option>
+            <option value="master">Master</option>
+            <option value="phd">PHD</option>
+        </select>
+        <br><br>
+
+        <label for="">Have any computer?*:</label>
+        <input type="radio" name="comp" id=""> Yes
+        <input type="radio" name="comp" id=""> No
+        <br><br>
+
+        <label for="pic">Picture*:</label><br>
+        <input type="file" name="pic" id="pic" required>
+        <br><br>
+
+        <label for="sign">Signature*:</label><br>
+        <input type="file" name="sign" id="sign" required>
+        <br><br>
+
+        <button type="submit">Submit Data</button>
+
+    </form>
+</body>
+</html>
